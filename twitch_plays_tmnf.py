@@ -19,10 +19,10 @@ def handle(message):
     if "right" == message.lower():
         Thread(target=py_direct_input.PressAndReleaseKey,
                args=(di_keyboard_scan_codes.DIK_RIGHT, 0.5)).start()
-    if "respawn" == message.lower():
+    if "enter" == message.lower():
         Thread(target=py_direct_input.PressAndReleaseKey,
                args=(di_keyboard_scan_codes.DIK_RETURN, 1)).start()
-    if "horn" == message.lower():
+    if "honk" == message.lower():
         Thread(target=py_direct_input.PressAndReleaseKey,
                args=(di_keyboard_scan_codes.DIK_NUMPAD0, 1)).start()
 
